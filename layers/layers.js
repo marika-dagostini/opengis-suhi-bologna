@@ -43,38 +43,6 @@ var lyr_ModelDSVC = new ol.layer.Image({
         <img src="styles/legend/ModelDSVC_7.png" /> 13,9081<br /></a>'
         });
     
-var lyr_ModelCSVC = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelCSVC.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model C - SVC</b><br />\
-        <img src="styles/legend/ModelCSVC_0.png" /> -0,7525<br />\
-        <img src="styles/legend/ModelCSVC_1.png" /> -0,5515<br />\
-        <img src="styles/legend/ModelCSVC_2.png" /> -0,3505<br />\
-        <img src="styles/legend/ModelCSVC_3.png" /> -0,1495<br />\
-        <img src="styles/legend/ModelCSVC_4.png" /> 0,0515<br />\
-        <img src="styles/legend/ModelCSVC_5.png" /> 0,2525<br />\
-        <img src="styles/legend/ModelCSVC_6.png" /> 0,4535<br />\
-        <img src="styles/legend/ModelCSVC_7.png" /> 0,6545<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelCSVC",
-    
-     
-    title: '<div id="layertitle">Model C - SVC<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelCSVC_0.png" /> -0,7525<br />\
-        <img src="styles/legend/ModelCSVC_1.png" /> -0,5515<br />\
-        <img src="styles/legend/ModelCSVC_2.png" /> -0,3505<br />\
-        <img src="styles/legend/ModelCSVC_3.png" /> -0,1495<br />\
-        <img src="styles/legend/ModelCSVC_4.png" /> 0,0515<br />\
-        <img src="styles/legend/ModelCSVC_5.png" /> 0,2525<br />\
-        <img src="styles/legend/ModelCSVC_6.png" /> 0,4535<br />\
-        <img src="styles/legend/ModelCSVC_7.png" /> 0,6545<br /></a>'
-        });
-    
 var lyr_ModelBSVC = new ol.layer.Image({
     source: new ol.source.ImageStatic({
         url: "./layers/ModelBSVC.png",
@@ -295,7 +263,7 @@ var lyr_Buildings = new ol.layer.VectorImage({
     style: style_Buildings,
     permalink: "Buildings",
     popuplayertitle: 'Buildings',
-    creationdate: '2025-07-07 21:05:10',
+    creationdate: '2025-07-07 23:26:34',
     interactive: false,
     title: '<img src="styles/legend/Buildings.png" /> Buildings'
     });
@@ -319,7 +287,7 @@ var lyr_IndustrialBuildings = new ol.layer.VectorImage({
     style: style_IndustrialBuildings,
     permalink: "IndustrialBuildings",
     popuplayertitle: 'Industrial Buildings',
-    creationdate: '2025-07-07 21:05:10',
+    creationdate: '2025-07-07 23:26:34',
     interactive: false,
     title: '<img src="styles/legend/IndustrialBuildings.png" /> Industrial Buildings'
     });
@@ -343,7 +311,7 @@ var lyr_GreenAreas = new ol.layer.VectorImage({
     style: style_GreenAreas,
     permalink: "GreenAreas",
     popuplayertitle: 'Green Areas',
-    creationdate: '2025-07-07 21:05:10',
+    creationdate: '2025-07-07 23:26:34',
     interactive: false,
     title: '<img src="styles/legend/GreenAreas.png" /> Green Areas'
     });
@@ -367,7 +335,7 @@ var lyr_MunicipalityofBologna = new ol.layer.Vector({
     style: style_MunicipalityofBologna,
     permalink: "MunicipalityofBologna",
     popuplayertitle: 'Municipality of Bologna',
-    creationdate: '2025-07-07 21:05:10',
+    creationdate: '2025-07-07 23:26:34',
     interactive: false,
     title: '<img src="styles/legend/MunicipalityofBologna.png" /> Municipality of Bologna'
     });
@@ -392,12 +360,16 @@ var group_PosteriorMeanSpaceFieldC = new ol.layer.Group({
                                 openInLayerSwitcher: true,
                                 title: ' Posterior Mean Space Field (°C)'});
 var group_PosteriorMeanSVCFieldC = new ol.layer.Group({
-                                layers: [lyr_ModelDSVC,lyr_ModelCSVC,lyr_ModelBSVC,lyr_ModelASVC,],
+                                layers: [lyr_ModelDSVC,lyr_ModelBSVC,lyr_ModelASVC,],
                                 openInLayerSwitcher: true,
                                 title: ' Posterior Mean SVC Field (°C)'});
+var group_Basemap = new ol.layer.Group({
+                                layers: [lyr_OSMStandard,],
+                                openInLayerSwitcher: true,
+                                title: 'Basemap'});
 
-lyr_OSMStandard.setVisible(true);lyr_ModelDSVC.setVisible(false);lyr_ModelCSVC.setVisible(false);lyr_ModelBSVC.setVisible(false);lyr_ModelASVC.setVisible(false);lyr_ModelDSpace.setVisible(false);lyr_ModelCSpace.setVisible(false);lyr_ModelBSpace.setVisible(false);lyr_ModelASpace.setVisible(false);lyr_Buildings.setVisible(false);lyr_IndustrialBuildings.setVisible(false);lyr_GreenAreas.setVisible(false);lyr_MunicipalityofBologna.setVisible(false);
-var layersList = [lyr_OSMStandard,group_PosteriorMeanSVCFieldC,group_PosteriorMeanSpaceFieldC,group_OSMData,group_StudyArea];
+lyr_OSMStandard.setVisible(true);lyr_ModelDSVC.setVisible(false);lyr_ModelBSVC.setVisible(false);lyr_ModelASVC.setVisible(false);lyr_ModelDSpace.setVisible(false);lyr_ModelCSpace.setVisible(false);lyr_ModelBSpace.setVisible(false);lyr_ModelASpace.setVisible(false);lyr_Buildings.setVisible(false);lyr_IndustrialBuildings.setVisible(false);lyr_GreenAreas.setVisible(false);lyr_MunicipalityofBologna.setVisible(false);
+var layersList = [group_Basemap,group_PosteriorMeanSVCFieldC,group_PosteriorMeanSpaceFieldC,group_OSMData,group_StudyArea];
 lyr_Buildings.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'building': 'building', 'name': 'name', 'amenity': 'amenity', 'brand': 'brand', 'wheelchair': 'wheelchair', });
 lyr_IndustrialBuildings.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'building': 'building', 'name': 'name', 'amenity': 'amenity', 'brand': 'brand', 'wheelchair': 'wheelchair', });
 lyr_GreenAreas.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'leisure': 'leisure', 'addr:postcode': 'addr:postcode', 'addr:street': 'addr:street', 'addr:city': 'addr:city', 'description': 'description', 'garden:type': 'garden:type', 'wikipedia': 'wikipedia', 'boundary': 'boundary', 'allocation:it': 'allocation:it', 'wikidata': 'wikidata', 'type': 'type', 'name': 'name', 'area': 'area', });

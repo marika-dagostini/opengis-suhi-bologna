@@ -72,7 +72,7 @@
             margin: 0;
         }
         </style>
-        <title></title>
+        <title>SUHI Bologna</title>
     </head>
     <body>
 <!-- map -->
@@ -84,8 +84,10 @@
 
 			<!--form logo -->
 			<div id="form_logo" style="position:absolute; z-index:1">
-			<label><a href="./index.html"><img src="./resources/stemma.png" align="left" height="60" title='Reset map'></img></a></label>
-			<h1 align="center"></h1>
+			<label><a href="./index.html"><img src="./resources/stemma.png" align="left" height="60" title='Reset map'></img></a> 
+			</label>
+			<!--these configurations in o.gis_style.css -->
+			<h1 align="left">Spatio-Temporal Analysis of Surface Urban Heat Islands Using High-Resolution Remote Sensing and SPDE-INLA: the Case Study of Bologna, Italy</h1>
 			</div>
 			<!-- form query wms wfs -->	  
 			<form id="form_querywmswfs" style="display: none; height:74px!important">
@@ -119,10 +121,10 @@
 							<li><a href="#tab4" title="TAB 4" role="tab"><strong style="font-size: 13px; font-family: 'arial';">TAB4</strong></a></li>
 						</ul>
 						<ul role="tablist">
-							<li class="disabled"><a href="#gear" role="tab"><i class="fa fa-gear"></i></a></li>
+						<!--	<li class="disabled"><a href="#gear" role="tab"><i class="fa fa-gear"></i></a></li>
 							<li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
 							<li class="disabled"><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
-							<li class="disabled"><a href="#share" title="Share" role="tab"><i class="fa fa-share-alt"></i></a></li>
+							<li class="disabled"><a href="#share" title="Share" role="tab"><i class="fa fa-share-alt"></i></a></li> --> 
 							<li><a href="#download" title="Download" role="tab"><i class="fa fa-download"></i></a></li>
 							<li onClick="window.print()"><a title="Print" role="tab"><i class="fa fa-print"></i></a></li>
 							<li><a href="#info" title="Info" role="tab"><i class="fa fa-info"></i></a></li>
@@ -145,21 +147,27 @@
 								TITLE TAB 1
 								<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
 							</h1>
-							<p class="lorem">Under construction</p>
+							<iframe frameborder="0" scrolling="auto" 
+							style="height:90%; width:99%; position: absolute; top: 50px; left: 0; bottom: 0; right: 0; " 
+							src="./resources/html_sidebar_content/02_TAB.htm"></iframe>
 						</div>
 						<div class="sidebar-pane" id="tab3">
 							<h1 class="sidebar-header">
 								TITLE TAB 2
 								<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
 							</h1>
-							<p class="lorem">Under construction</p>
+							<iframe frameborder="0" scrolling="auto" 
+							style="height:90%; width:99%; position: absolute; top: 50px; left: 0; bottom: 0; right: 0; " 
+							src="./resources/html_sidebar_content/03_TAB.htm"></iframe>
 						</div>
 						<div class="sidebar-pane" id="tab4">
 							<h1 class="sidebar-header">
 								TITLE TAB 3
 								<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
 							</h1>
-							<p class="lorem">Under construction</p>
+							<iframe frameborder="0" scrolling="auto" 
+							style="height:90%; width:99%; position: absolute; top: 50px; left: 0; bottom: 0; right: 0; " 
+							src="./resources/html_sidebar_content/04_TAB.htm"></iframe>
 						</div>
 						<div class="sidebar-pane" id="download">
 							<h1 class="sidebar-header">
@@ -365,6 +373,17 @@
 		  $('#ol-street-view--panorama').css('filter', 'invert(1)');
 		}
 	});
+	
+	map.removeControl(geocoder);				// remove address search
+	map.removeControl(geoloc);				// remove gps loc
+	map.removeControl(querywmswfs);			// remove query wms
+	map.removeControl(popupall);				// remove popup all
+	map.removeControl(bar);					// remove design bar
+	map.removeControl(search); 				// remove quick search
+	map.removeControl(ov);					// remove minimap
+	map.removeControl(scaleCtrl);			// remove scale control
+	map.removeControl(mousePositionDefault); // remove mouse position
+	map.removeControl(printControl);			// remove print
 </script>
 <!-- attribution 
 <script>	
@@ -401,5 +420,14 @@
 		display: none!important;}
 </style>
 -->
+
+<style>
+.ol-permalink {display: none!important;}	
+.layerExtent {display: none!important;}
+.layerup {display: none!important;}
+#ol-street-view--pegman-button-div {display: none!important;}
+.legend-attribution {display: none!important;}
+
+</style>
     </body>
 </html>
