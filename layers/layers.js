@@ -13,98 +13,34 @@ var lyr_OSMStandard = new ol.layer.Tile({
         
 var lyr_ModelDSVC = new ol.layer.Image({
     source: new ol.source.ImageStatic({
-        url: "./layers/ModelDSVC.png",
+        url: "./layers/ModelCSVC.png",
         projection: 'EPSG:3857',
         alwaysInRange: true,
         imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
     attributions: '<a class="legend"><b>Model D - SVC</b><br />\
-        <img src="styles/legend/ModelDSVC_0.png" /> -9,3392<br />\
-        <img src="styles/legend/ModelDSVC_1.png" /> -6,0182<br />\
-        <img src="styles/legend/ModelDSVC_2.png" /> -2,6971<br />\
-        <img src="styles/legend/ModelDSVC_3.png" /> 0,6239<br />\
-        <img src="styles/legend/ModelDSVC_4.png" /> 3,9449<br />\
-        <img src="styles/legend/ModelDSVC_5.png" /> 7,2660<br />\
-        <img src="styles/legend/ModelDSVC_6.png" /> 10,5870<br />\
-        <img src="styles/legend/ModelDSVC_7.png" /> 13,9081<br /></a>'
+        <img src="styles/legend/ModelCSVC_0.png" /> -0,75<br />\
+        <img src="styles/legend/ModelCSVC_1.png" /> -0,55<br />\
+        <img src="styles/legend/ModelCSVC_2.png" /> -0,35<br />\
+        <img src="styles/legend/ModelCSVC_3.png" /> -0,15<br />\
+        <img src="styles/legend/ModelCSVC_4.png" /> 0,05<br />\
+        <img src="styles/legend/ModelCSVC_5.png" /> 0,25<br />\
+        <img src="styles/legend/ModelCSVC_6.png" /> 0,45<br />\
+        <img src="styles/legend/ModelCSVC_7.png" /> 0,65<br /></a>'
         }),
     opacity: 1,
     permalink: "ModelDSVC",
     
      
-    title: '<div id="layertitle">Model D - SVC<br />\
+    title: '<div id="layertitle">SVC<br />\
         <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelDSVC_0.png" /> -9,3392<br />\
-        <img src="styles/legend/ModelDSVC_1.png" /> -6,0182<br />\
-        <img src="styles/legend/ModelDSVC_2.png" /> -2,6971<br />\
-        <img src="styles/legend/ModelDSVC_3.png" /> 0,6239<br />\
-        <img src="styles/legend/ModelDSVC_4.png" /> 3,9449<br />\
-        <img src="styles/legend/ModelDSVC_5.png" /> 7,2660<br />\
-        <img src="styles/legend/ModelDSVC_6.png" /> 10,5870<br />\
-        <img src="styles/legend/ModelDSVC_7.png" /> 13,9081<br /></a>'
-        });
-    
-var lyr_ModelBSVC = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelBSVC.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model B - SVC</b><br />\
-        <img src="styles/legend/ModelBSVC_0.png" /> -0,7502<br />\
-        <img src="styles/legend/ModelBSVC_1.png" /> -0,5498<br />\
-        <img src="styles/legend/ModelBSVC_2.png" /> -0,3494<br />\
-        <img src="styles/legend/ModelBSVC_3.png" /> -0,1491<br />\
-        <img src="styles/legend/ModelBSVC_4.png" /> 0,0513<br />\
-        <img src="styles/legend/ModelBSVC_5.png" /> 0,2516<br />\
-        <img src="styles/legend/ModelBSVC_6.png" /> 0,4520<br />\
-        <img src="styles/legend/ModelBSVC_7.png" /> 0,6523<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelBSVC",
-    
-     
-    title: '<div id="layertitle">Model B - SVC<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelBSVC_0.png" /> -0,7502<br />\
-        <img src="styles/legend/ModelBSVC_1.png" /> -0,5498<br />\
-        <img src="styles/legend/ModelBSVC_2.png" /> -0,3494<br />\
-        <img src="styles/legend/ModelBSVC_3.png" /> -0,1491<br />\
-        <img src="styles/legend/ModelBSVC_4.png" /> 0,0513<br />\
-        <img src="styles/legend/ModelBSVC_5.png" /> 0,2516<br />\
-        <img src="styles/legend/ModelBSVC_6.png" /> 0,4520<br />\
-        <img src="styles/legend/ModelBSVC_7.png" /> 0,6523<br /></a>'
-        });
-    
-var lyr_ModelASVC = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelASVC.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model A - SVC</b><br />\
-        <img src="styles/legend/ModelASVC_0.png" /> -0,7044<br />\
-        <img src="styles/legend/ModelASVC_1.png" /> -0,5108<br />\
-        <img src="styles/legend/ModelASVC_2.png" /> -0,3172<br />\
-        <img src="styles/legend/ModelASVC_3.png" /> -0,1236<br />\
-        <img src="styles/legend/ModelASVC_4.png" /> 0,0700<br />\
-        <img src="styles/legend/ModelASVC_5.png" /> 0,2636<br />\
-        <img src="styles/legend/ModelASVC_6.png" /> 0,4572<br />\
-        <img src="styles/legend/ModelASVC_7.png" /> 0,6508<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelASVC",
-    
-     
-    title: '<div id="layertitle">Model A - SVC<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelASVC_0.png" /> -0,7044<br />\
-        <img src="styles/legend/ModelASVC_1.png" /> -0,5108<br />\
-        <img src="styles/legend/ModelASVC_2.png" /> -0,3172<br />\
-        <img src="styles/legend/ModelASVC_3.png" /> -0,1236<br />\
-        <img src="styles/legend/ModelASVC_4.png" /> 0,0700<br />\
-        <img src="styles/legend/ModelASVC_5.png" /> 0,2636<br />\
-        <img src="styles/legend/ModelASVC_6.png" /> 0,4572<br />\
-        <img src="styles/legend/ModelASVC_7.png" /> 0,6508<br /></a>'
+        <img src="styles/legend/ModelCSVC_7.png" /> 0,65<br />\
+        <img src="styles/legend/ModelCSVC_6.png" /> 0,45<br />\
+        <img src="styles/legend/ModelCSVC_5.png" /> 0,25<br />\
+        <img src="styles/legend/ModelCSVC_4.png" /> 0,05<br />\
+        <img src="styles/legend/ModelCSVC_3.png" /> -0,15<br />\
+        <img src="styles/legend/ModelCSVC_2.png" /> -0,35<br />\
+        <img src="styles/legend/ModelCSVC_1.png" /> -0,55<br />\
+        <img src="styles/legend/ModelCSVC_0.png" /> -0,75<br /></a>'
         });
     
 var lyr_ModelDSpace = new ol.layer.Image({
@@ -114,142 +50,35 @@ var lyr_ModelDSpace = new ol.layer.Image({
         alwaysInRange: true,
         imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
     attributions: '<a class="legend"><b>Model D - Space</b><br />\
-        <img src="styles/legend/ModelDSpace_0.png" /> -9,3392<br />\
-        <img src="styles/legend/ModelDSpace_1.png" /> -6,7562<br />\
-        <img src="styles/legend/ModelDSpace_2.png" /> -4,1732<br />\
-        <img src="styles/legend/ModelDSpace_3.png" /> -1,5901<br />\
-        <img src="styles/legend/ModelDSpace_4.png" /> 0,9929<br />\
-        <img src="styles/legend/ModelDSpace_5.png" /> 3,5759<br />\
-        <img src="styles/legend/ModelDSpace_6.png" /> 6,1590<br />\
-        <img src="styles/legend/ModelDSpace_7.png" /> 8,7420<br />\
-        <img src="styles/legend/ModelDSpace_8.png" /> 11,3251<br />\
-        <img src="styles/legend/ModelDSpace_9.png" /> 13,9081<br /></a>'
+        <img src="styles/legend/ModelDSpace_0.png" /> -9,34<br />\
+        <img src="styles/legend/ModelDSpace_1.png" /> -6,76<br />\
+        <img src="styles/legend/ModelDSpace_2.png" /> -4,17<br />\
+        <img src="styles/legend/ModelDSpace_3.png" /> -1,59<br />\
+        <img src="styles/legend/ModelDSpace_4.png" /> 0,99<br />\
+        <img src="styles/legend/ModelDSpace_5.png" /> 3,58<br />\
+        <img src="styles/legend/ModelDSpace_6.png" /> 6,16<br />\
+        <img src="styles/legend/ModelDSpace_7.png" /> 8,74<br />\
+        <img src="styles/legend/ModelDSpace_8.png" /> 11,33<br />\
+        <img src="styles/legend/ModelDSpace_9.png" /> 13,91<br /></a>'
         }),
     opacity: 1,
     permalink: "ModelDSpace",
     
      
-    title: '<div id="layertitle">Model D - Space<br />\
+    title: '<div id="layertitle">Space<br />\
         <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelDSpace_0.png" /> -9,3392<br />\
-        <img src="styles/legend/ModelDSpace_1.png" /> -6,7562<br />\
-        <img src="styles/legend/ModelDSpace_2.png" /> -4,1732<br />\
-        <img src="styles/legend/ModelDSpace_3.png" /> -1,5901<br />\
-        <img src="styles/legend/ModelDSpace_4.png" /> 0,9929<br />\
-        <img src="styles/legend/ModelDSpace_5.png" /> 3,5759<br />\
-        <img src="styles/legend/ModelDSpace_6.png" /> 6,1590<br />\
-        <img src="styles/legend/ModelDSpace_7.png" /> 8,7420<br />\
-        <img src="styles/legend/ModelDSpace_8.png" /> 11,3251<br />\
-        <img src="styles/legend/ModelDSpace_9.png" /> 13,9081<br /></a>'
+        <img src="styles/legend/ModelDSpace_9.png" /> 13,91<br />\
+        <img src="styles/legend/ModelDSpace_8.png" /> 11,33<br />\
+        <img src="styles/legend/ModelDSpace_7.png" /> 8,74<br />\
+        <img src="styles/legend/ModelDSpace_6.png" /> 6,16<br />\
+        <img src="styles/legend/ModelDSpace_5.png" /> 3,58<br />\
+        <img src="styles/legend/ModelDSpace_4.png" /> 0,99<br />\
+        <img src="styles/legend/ModelDSpace_3.png" /> -1,59<br />\
+        <img src="styles/legend/ModelDSpace_2.png" /> -4,17<br />\
+        <img src="styles/legend/ModelDSpace_1.png" /> -6,76<br />\
+        <img src="styles/legend/ModelDSpace_0.png" /> -9,34<br /></a>'
         });
     
-var lyr_ModelCSpace = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelCSpace.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model C - Space</b><br />\
-        <img src="styles/legend/ModelCSpace_0.png" /> -9,3286<br />\
-        <img src="styles/legend/ModelCSpace_1.png" /> -6,7471<br />\
-        <img src="styles/legend/ModelCSpace_2.png" /> -4,1655<br />\
-        <img src="styles/legend/ModelCSpace_3.png" /> -1,5839<br />\
-        <img src="styles/legend/ModelCSpace_4.png" /> 0,9977<br />\
-        <img src="styles/legend/ModelCSpace_5.png" /> 3,5793<br />\
-        <img src="styles/legend/ModelCSpace_6.png" /> 6,1609<br />\
-        <img src="styles/legend/ModelCSpace_7.png" /> 8,7425<br />\
-        <img src="styles/legend/ModelCSpace_8.png" /> 11,3241<br />\
-        <img src="styles/legend/ModelCSpace_9.png" /> 13,9057<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelCSpace",
-    
-     
-    title: '<div id="layertitle">Model C - Space<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelCSpace_0.png" /> -9,3286<br />\
-        <img src="styles/legend/ModelCSpace_1.png" /> -6,7471<br />\
-        <img src="styles/legend/ModelCSpace_2.png" /> -4,1655<br />\
-        <img src="styles/legend/ModelCSpace_3.png" /> -1,5839<br />\
-        <img src="styles/legend/ModelCSpace_4.png" /> 0,9977<br />\
-        <img src="styles/legend/ModelCSpace_5.png" /> 3,5793<br />\
-        <img src="styles/legend/ModelCSpace_6.png" /> 6,1609<br />\
-        <img src="styles/legend/ModelCSpace_7.png" /> 8,7425<br />\
-        <img src="styles/legend/ModelCSpace_8.png" /> 11,3241<br />\
-        <img src="styles/legend/ModelCSpace_9.png" /> 13,9057<br /></a>'
-        });
-    
-var lyr_ModelBSpace = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelBSpace.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model B - Space</b><br />\
-        <img src="styles/legend/ModelBSpace_0.png" /> -9,3686<br />\
-        <img src="styles/legend/ModelBSpace_1.png" /> -6,7903<br />\
-        <img src="styles/legend/ModelBSpace_2.png" /> -4,2121<br />\
-        <img src="styles/legend/ModelBSpace_3.png" /> -1,6338<br />\
-        <img src="styles/legend/ModelBSpace_4.png" /> 0,9445<br />\
-        <img src="styles/legend/ModelBSpace_5.png" /> 3,5227<br />\
-        <img src="styles/legend/ModelBSpace_6.png" /> 6,1010<br />\
-        <img src="styles/legend/ModelBSpace_7.png" /> 8,6792<br />\
-        <img src="styles/legend/ModelBSpace_8.png" /> 11,2575<br />\
-        <img src="styles/legend/ModelBSpace_9.png" /> 13,8358<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelBSpace",
-    
-     
-    title: '<div id="layertitle">Model B - Space<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelBSpace_0.png" /> -9,3686<br />\
-        <img src="styles/legend/ModelBSpace_1.png" /> -6,7903<br />\
-        <img src="styles/legend/ModelBSpace_2.png" /> -4,2121<br />\
-        <img src="styles/legend/ModelBSpace_3.png" /> -1,6338<br />\
-        <img src="styles/legend/ModelBSpace_4.png" /> 0,9445<br />\
-        <img src="styles/legend/ModelBSpace_5.png" /> 3,5227<br />\
-        <img src="styles/legend/ModelBSpace_6.png" /> 6,1010<br />\
-        <img src="styles/legend/ModelBSpace_7.png" /> 8,6792<br />\
-        <img src="styles/legend/ModelBSpace_8.png" /> 11,2575<br />\
-        <img src="styles/legend/ModelBSpace_9.png" /> 13,8358<br /></a>'
-        });
-    
-var lyr_ModelASpace = new ol.layer.Image({
-    source: new ol.source.ImageStatic({
-        url: "./layers/ModelASpace.png",
-        projection: 'EPSG:3857',
-        alwaysInRange: true,
-        imageExtent: [1249622.477437, 5530481.577859, 1272969.872405, 5552313.551122],
-    attributions: '<a class="legend"><b>Model A - Space</b><br />\
-        <img src="styles/legend/ModelASpace_0.png" /> -8,9776<br />\
-        <img src="styles/legend/ModelASpace_1.png" /> -6,5383<br />\
-        <img src="styles/legend/ModelASpace_2.png" /> -4,0989<br />\
-        <img src="styles/legend/ModelASpace_3.png" /> -1,6596<br />\
-        <img src="styles/legend/ModelASpace_4.png" /> 0,7798<br />\
-        <img src="styles/legend/ModelASpace_5.png" /> 3,2191<br />\
-        <img src="styles/legend/ModelASpace_6.png" /> 5,6585<br />\
-        <img src="styles/legend/ModelASpace_7.png" /> 8,0978<br />\
-        <img src="styles/legend/ModelASpace_8.png" /> 10,5372<br />\
-        <img src="styles/legend/ModelASpace_9.png" /> 12,9765<br /></a>'
-        }),
-    opacity: 1,
-    permalink: "ModelASpace",
-    
-     
-    title: '<div id="layertitle">Model A - Space<br />\
-        <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/ModelASpace_0.png" /> -8,9776<br />\
-        <img src="styles/legend/ModelASpace_1.png" /> -6,5383<br />\
-        <img src="styles/legend/ModelASpace_2.png" /> -4,0989<br />\
-        <img src="styles/legend/ModelASpace_3.png" /> -1,6596<br />\
-        <img src="styles/legend/ModelASpace_4.png" /> 0,7798<br />\
-        <img src="styles/legend/ModelASpace_5.png" /> 3,2191<br />\
-        <img src="styles/legend/ModelASpace_6.png" /> 5,6585<br />\
-        <img src="styles/legend/ModelASpace_7.png" /> 8,0978<br />\
-        <img src="styles/legend/ModelASpace_8.png" /> 10,5372<br />\
-        <img src="styles/legend/ModelASpace_9.png" /> 12,9765<br /></a>'
-        });
     
 var format_Buildings = new ol.format.GeoJSON();
 var features_Buildings = format_Buildings.readFeatures(json_Buildings, 
@@ -355,21 +184,17 @@ var group_OSMData = new ol.layer.Group({
                                 layers: [lyr_Buildings,lyr_IndustrialBuildings,lyr_GreenAreas,],
                                 openInLayerSwitcher: true,
                                 title: 'OSM Data'});
-var group_PosteriorMeanSpaceFieldC = new ol.layer.Group({
-                                layers: [lyr_ModelDSpace,lyr_ModelCSpace,lyr_ModelBSpace,lyr_ModelASpace,],
-                                openInLayerSwitcher: true,
-                                title: ' Posterior Mean Space Field (°C)'});
 var group_PosteriorMeanSVCFieldC = new ol.layer.Group({
-                                layers: [lyr_ModelDSVC,lyr_ModelBSVC,lyr_ModelASVC,],
+                                layers: [lyr_ModelDSpace,lyr_ModelDSVC,],
                                 openInLayerSwitcher: true,
-                                title: ' Posterior Mean SVC Field (°C)'});
+                                title: ' Posterior Mean SPDE Fields (°C)'});
 var group_Basemap = new ol.layer.Group({
                                 layers: [lyr_OSMStandard,],
                                 openInLayerSwitcher: true,
                                 title: 'Basemap'});
 
-lyr_OSMStandard.setVisible(true);lyr_ModelDSVC.setVisible(false);lyr_ModelBSVC.setVisible(false);lyr_ModelASVC.setVisible(false);lyr_ModelDSpace.setVisible(false);lyr_ModelCSpace.setVisible(false);lyr_ModelBSpace.setVisible(false);lyr_ModelASpace.setVisible(false);lyr_Buildings.setVisible(false);lyr_IndustrialBuildings.setVisible(false);lyr_GreenAreas.setVisible(false);lyr_MunicipalityofBologna.setVisible(false);
-var layersList = [group_Basemap,group_PosteriorMeanSVCFieldC,group_PosteriorMeanSpaceFieldC,group_OSMData,group_StudyArea];
+lyr_OSMStandard.setVisible(true);lyr_ModelDSpace.setVisible(false);lyr_ModelDSVC.setVisible(false);lyr_Buildings.setVisible(false);lyr_IndustrialBuildings.setVisible(false);lyr_GreenAreas.setVisible(false);lyr_MunicipalityofBologna.setVisible(false);
+var layersList = [group_Basemap,group_PosteriorMeanSVCFieldC,group_OSMData,group_StudyArea];
 lyr_Buildings.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'building': 'building', 'name': 'name', 'amenity': 'amenity', 'brand': 'brand', 'wheelchair': 'wheelchair', });
 lyr_IndustrialBuildings.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'building': 'building', 'name': 'name', 'amenity': 'amenity', 'brand': 'brand', 'wheelchair': 'wheelchair', });
 lyr_GreenAreas.set('fieldAliases', {'fid': 'fid', 'full_id': 'full_id', 'osm_id': 'osm_id', 'osm_type': 'osm_type', 'leisure': 'leisure', 'addr:postcode': 'addr:postcode', 'addr:street': 'addr:street', 'addr:city': 'addr:city', 'description': 'description', 'garden:type': 'garden:type', 'wikipedia': 'wikipedia', 'boundary': 'boundary', 'allocation:it': 'allocation:it', 'wikidata': 'wikidata', 'type': 'type', 'name': 'name', 'area': 'area', });
