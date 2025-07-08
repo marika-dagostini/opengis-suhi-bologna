@@ -19,7 +19,7 @@ var style_GreenAreas = function(feature, resolution){
             labelText = String("");
         }
         var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(38,115,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.748}),fill: new ol.style.Fill({color: 'rgba(38,115,0,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(38,115,0,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.748}),fill: new ol.style.Fill({color: 'rgba(134,198,103,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, textPlacement, bufferColor,
                               bufferWidth)
