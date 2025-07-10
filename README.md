@@ -8,5 +8,9 @@ Marika D’Agostini <sup>1</sup>, Massimo Ventrucci <sup>1</sup>, Andrea Ranzi <
 
 © All rights reserved.
 
+
+
+
+
 Please cite as: *"D'Agostini M., Ventrucci M., & Ranzi A. (2025). Spatio-Temporal Analysis of Surface Urban Heat Islands Using High-Resolution Remote Sensing and SPDE-INLA: the Case Study of Bologna, Italy. Retrieved from
 marika-dagostini.github.io/opengis-suhi-bologna "*
