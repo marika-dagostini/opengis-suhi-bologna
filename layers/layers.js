@@ -157,46 +157,44 @@ var lyr_Space = new ol.layer.Image({
 
 var lyr_LandCover2023withUrbanClassification = new ol.layer.Image({
     source: new ol.source.ImageStatic({
-        url: "./layers/LandCover2023withUrbanClassification.png",
+        url: "./layers/LandCover2023NewClassification.png",
         projection: 'EPSG:3857',
         alwaysInRange: true,
         imageExtent: [1249619.244261, 5530465.794858, 1272981.426030, 5552333.805161],
-    attributions: '<a class="legend"><b>Land Cover 2023 with Urban Classification</b><br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_0.png" /> Superfici impermeabili<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_1.png" /> Superfici non consolidate<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_2.png" /> Latifoglie<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_3.png" /> Conifere<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_4.png" /> Arbusteti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_5.png" /> Erbaceo periodico<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_6.png" /> Erbaceo permanente<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_7.png" /> Corpi idrici permanenti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_8.png" /> Urbano - Superfici imperbeabili<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_9.png" /> Urbano - Latifoglie<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_10.png" /> Urbano - Conifere<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_11.png" /> Urbano - Arbusteti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_12.png" /> Urbano - Erbaceo periodico<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_13.png" /> Urbano - Erbaceo permanente<br /></a>'
+    attributions: '<a class="legend"><b>Land Cover 2023 - New Classification</b><br />\
+        <img src="styles/legend/LandCover2023NewClassification_0.png" /> Conifere<br />\
+        <img src="styles/legend/LandCover2023NewClassification_1.png" /> Arbusteti<br />\
+        <img src="styles/legend/LandCover2023NewClassification_2.png" /> Corpi Idrici Permanenti <br />\
+        <img src="styles/legend/LandCover2023NewClassification_3.png" /> Erbaceo Periodico<br />\
+        <img src="styles/legend/LandCover2023NewClassification_4.png" /> Erbaceo Permanente<br />\
+        <img src="styles/legend/LandCover2023NewClassification_5.png" /> Industriale<br />\
+        <img src="styles/legend/LandCover2023NewClassification_6.png" /> Latifoglie<br />\
+        <img src="styles/legend/LandCover2023NewClassification_7.png" /> Superfici Impermeabili<br />\
+        <img src="styles/legend/LandCover2023NewClassification_8.png" /> Superfici non Consolidate<br />\
+        <img src="styles/legend/LandCover2023NewClassification_9.png" /> Urbano - Arbusteti<br />\
+        <img src="styles/legend/LandCover2023NewClassification_10.png" /> Urbano - Conifere<br />\
+        <img src="styles/legend/LandCover2023NewClassification_11.png" /> Urbano - Erbaceo Permaente<br />\
+        <img src="styles/legend/LandCover2023NewClassification_12.png" /> Urbano - Latifoglie<br /></a>'
         }),
     opacity: 1,
-    permalink: "LandCover2023withUrbanClassification",
+    permalink: "lyr_LandCover2023withUrbanClassification",
     
      
-    title: '<div id="layertitle">Land Cover 2023 with Urban Classification<br />\
+    title: '<div id="layertitle">Land Cover 2023 - New Classification<br />\
         <i class="fas fa-angle-up" id="secondImage"></i><i class="fas fa-angle-down" id="firstImage"></i></div><a class="layerlegend">\
-        <img src="styles/legend/LandCover2023withUrbanClassification_0.png" /> Superfici impermeabili<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_1.png" /> Superfici non consolidate<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_2.png" /> Latifoglie<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_3.png" /> Conifere<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_4.png" /> Arbusteti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_5.png" /> Erbaceo periodico<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_6.png" /> Erbaceo permanente<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_7.png" /> Corpi idrici permanenti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_8.png" /> Urbano - Superfici imperbeabili<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_9.png" /> Urbano - Latifoglie<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_10.png" /> Urbano - Conifere<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_11.png" /> Urbano - Arbusteti<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_12.png" /> Urbano - Erbaceo periodico<br />\
-        <img src="styles/legend/LandCover2023withUrbanClassification_13.png" /> Urbano - Erbaceo permanente<br /></a>'
+        <img src="styles/legend/LandCover2023NewClassification_0.png" /> Conifere<br />\
+        <img src="styles/legend/LandCover2023NewClassification_1.png" /> Arbusteti<br />\
+        <img src="styles/legend/LandCover2023NewClassification_2.png" /> Corpi Idrici Permanenti <br />\
+        <img src="styles/legend/LandCover2023NewClassification_3.png" /> Erbaceo Periodico<br />\
+        <img src="styles/legend/LandCover2023NewClassification_4.png" /> Erbaceo Permanente<br />\
+        <img src="styles/legend/LandCover2023NewClassification_5.png" /> Industriale<br />\
+        <img src="styles/legend/LandCover2023NewClassification_6.png" /> Latifoglie<br />\
+        <img src="styles/legend/LandCover2023NewClassification_7.png" /> Superfici Impermeabili<br />\
+        <img src="styles/legend/LandCover2023NewClassification_8.png" /> Superfici non Consolidate<br />\
+        <img src="styles/legend/LandCover2023NewClassification_9.png" /> Urbano - Arbusteti<br />\
+        <img src="styles/legend/LandCover2023NewClassification_10.png" /> Urbano - Conifere<br />\
+        <img src="styles/legend/LandCover2023NewClassification_11.png" /> Urbano - Erbaceo Permaente<br />\
+        <img src="styles/legend/LandCover2023NewClassification_12.png" /> Urbano - Latifoglie<br /></a>'
         });
     
 var lyr_LandUse2023 = new ol.layer.Image({
