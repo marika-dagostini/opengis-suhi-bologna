@@ -12,5 +12,4 @@ Marika D’Agostini <sup>1</sup>, Massimo Ventrucci <sup>1</sup>, Andrea Ranzi <
 Poster presented at the [GRASPA 2025 conference](https://graspa2025.sis-statistica.it/): *GRASPA25__Poster.pdf*
 
 
-Please cite as: *"D'Agostini M., Ventrucci M., & Ranzi A. (2025). Spatio-Temporal Analysis of Surface Urban Heat Islands Using High-Resolution Remote Sensing and SPDE-INLA: the Case Study of Bologna, Italy. Retrieved from
-marika-dagostini.github.io/graspa25-suhi-bologna "*
+Please cite as: *D'Agostini M., Ventrucci M., & Ranzi A. (2025). Spatio-Temporal Analysis of Surface Urban Heat Islands Using High-Resolution Remote Sensing and SPDE-INLA: the Case Study of Bologna, Italy*. In: Proceedings of the Graspa 2025 Conference (Roma, 15-17 September 2025).
